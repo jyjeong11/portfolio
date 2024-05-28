@@ -1,3 +1,4 @@
+/*
 import logo from './logo.svg';
 import './App.css';
 
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload. edit!!
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -21,5 +22,23 @@ function App() {
     </div>
   );
 }
+
+export default App;
+*/
+
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Feedback from "./Pages/feedback";
+
+const App = () => {
+    return (
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Feedback />} />
+        </Routes>
+    </BrowserRouter>
+    );
+};
 
 export default App;
